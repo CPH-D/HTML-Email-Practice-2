@@ -35,9 +35,57 @@
             border-width: 0;
         }
 
-        @media screen and (max-width: 599.98px) {}
+        @media screen and (max-width: 599.98px) {
 
-        @media screen and (max-width: 399.98px) {}
+            .two-columns .padding,
+            .two-third-columns .padding,
+            .three-columns .padding {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+
+            img.two-col-img {
+                width: 300px !important;
+                max-width: 300px !important;
+            }
+
+            .two-third-columns .padding.first {
+                padding-bottom: 0 !important;
+            }
+
+            .two-third-columns .padding.last {
+                padding-top: 0 !important;
+            }
+
+            img.one-third-col-img,
+            img.three-col-img-last {
+                width: 200px !important;
+                max-width: 200px !important;
+            }
+
+            .two-third-columns .content {
+                text-align: center !important;
+            }
+
+            .banner {
+                height: auto !important;
+                padding-top: 40px !important;
+                padding-bottom: 60px !important;
+            }
+        }
+
+        @media screen and (max-width: 399.98px) {
+            img.three-col-img {
+                width: 200px !important;
+                max-width: 200px !important;
+            }
+
+            .banner {
+                height: auto !important;
+                padding-top: 10px !important;
+                padding-bottom: 40px !important;
+            }
+        }
 
         /* Custom Dark Mode Colors */
 
@@ -132,7 +180,7 @@
 
                 <!-- START BANNER -->
                 <tr>
-                    <td background="https://i.ibb.co/hMhVbjT/stats2.gif" width="600" height="332"
+                    <td class="banner" background="https://i.ibb.co/hMhVbjT/stats2.gif" width="600" height="332"
                         style="background-position: center top;">
 
                         <!-- [if (gte mso 9)|(IE)]>
@@ -222,6 +270,7 @@
                                                     <tr>
                                                         <td>
                                                             <a href="https://example.com" target="_blank"><img
+                                                                    class="two-col-img"
                                                                     src="https://i.ibb.co/Tmg3qbV/man-teal.jpg"
                                                                     width="260"
                                                                     style="max-width: 260px;border-radius:8px;"></a>
@@ -271,6 +320,7 @@
                                                     <tr>
                                                         <td>
                                                             <a href="https://example.com" target="_blank"><img
+                                                                    class="two-col-img"
                                                                     src="https://i.ibb.co/nQn29Sg/woman-teal.jpg"
                                                                     width="260"
                                                                     style="max-width: 260px;border-radius:8px;"></a>
@@ -344,6 +394,7 @@
                                                     <tr>
                                                         <td>
                                                             <a href="https://example.com" target="_blank"><img
+                                                                    class="one-third-col-img"
                                                                     src="https://i.ibb.co/j852yw3/teal-circle.png"
                                                                     width="160" style="max-width: 160px;"
                                                                     border="0"></a>
@@ -402,7 +453,7 @@
                     <td style="padding:30px 0 40px 0;">
                         <table width="100%" style="border-spacing:0;" role="presentation">
                             <tr>
-                                <td class="four-columns" style="padding:0;font-size:0;text-align: center;">
+                                <td class="three-columns" style="padding:0;font-size:0;text-align: center;">
 
                                     <!-- [if (gte mso 9)|(IE)]>
                                     <table width="100" style="border-spacing:0;" role="presentation">
